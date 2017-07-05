@@ -1,7 +1,7 @@
 object FrmMain: TFrmMain
   Left = 630
   Height = 622
-  Top = 179
+  Top = 204
   Width = 889
   Caption = 'Chameleon Capturer V2'
   ClientHeight = 622
