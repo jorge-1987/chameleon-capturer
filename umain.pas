@@ -5,16 +5,19 @@ unit UMain;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls;
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
+  StdCtrls, UFunctions;
 
 type
 
   { TFrmMain }
 
   TFrmMain = class(TForm)
+    BtnCapture: TButton;
     ImgScreenshot: TImage;
     PnlToolsBottom: TPanel;
     PnlToolsTop: TPanel;
+    procedure BtnCaptureClick(Sender: TObject);
   private
     { private declarations }
   public
@@ -27,6 +30,14 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TFrmMain }
+
+procedure TFrmMain.BtnCaptureClick(Sender: TObject);
+begin
+  //Call the Capture Function depending on what the user selected.
+
+end;
 
 end.
 

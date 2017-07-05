@@ -32,7 +32,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="2">
+    <Units Count="3">
       <Unit0>
         <Filename Value="chameleoncapturer.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -41,9 +41,15 @@
         <Filename Value="umain.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FrmMain"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UMain"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="ufunctions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="UFunctions"/>
+      </Unit2>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
