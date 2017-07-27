@@ -26,6 +26,7 @@ type
 
 var
   FrmMain: TFrmMain;
+  BmpScreenshot: TBitmap;
 
 implementation
 
@@ -36,6 +37,19 @@ implementation
 procedure TFrmMain.BtnCaptureClick(Sender: TObject);
 begin
   //Call the Capture Function depending on what the user selected.
+
+
+  //Basic Screenshot
+  BmpScreenshot := TBitmap.Create;
+  BmpScreenshot := UFunctions.TakeScreenshot(1);
+  BmpScreenshot.SaveToFile('tmp.bpm');
+
+  ImgScreenshot.Height := BmpScreenshot.Canvas.Height;
+  ImgScreenshot.Width := BmpScreenshot.Canvas.Width;
+  //ImgScreenshot.Canvas.Height := BmpScreenshot.Canvas.Height;
+  //ImgScreenshot.Canvas.Width := BmpScreenshot.Canvas.Width;
+  ImgScreenshot.Canvas.Draw(0,0,BmpScreenshot);
+
 
 end;
 

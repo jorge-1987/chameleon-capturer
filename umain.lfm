@@ -44,5 +44,7 @@ object FrmMain: TFrmMain
     Top = 104
     Width = 889
     Align = alClient
+    AutoSize = True
+    Proportional = True
   end
 end

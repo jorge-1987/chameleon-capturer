@@ -1,0 +1,50 @@
+object FrmMain: TFrmMain
+  Left = 630
+  Height = 622
+  Top = 204
+  Width = 889
+  Caption = 'Chameleon Capturer V2'
+  ClientHeight = 622
+  ClientWidth = 889
+  LCLVersion = '1.6.0.4'
+  object PnlToolsTop: TPanel
+    Left = 0
+    Height = 104
+    Top = 0
+    Width = 889
+    Align = alTop
+    ClientHeight = 104
+    ClientWidth = 889
+    Color = clSilver
+    ParentColor = False
+    TabOrder = 0
+    object BtnCapture: TButton
+      Left = 0
+      Height = 104
+      Top = 0
+      Width = 160
+      Caption = 'Capture'
+      OnClick = BtnCaptureClick
+      TabOrder = 0
+    end
+  end
+  object PnlToolsBottom: TPanel
+    Left = 0
+    Height = 86
+    Top = 536
+    Width = 889
+    Align = alBottom
+    Color = clSilver
+    ParentColor = False
+    TabOrder = 1
+  end
+  object ImgScreenshot: TImage
+    Left = 0
+    Height = 432
+    Top = 104
+    Width = 889
+    Align = alClient
+    AutoSize = True
+    Proportional = True
+  end
+end
