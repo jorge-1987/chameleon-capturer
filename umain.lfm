@@ -6,6 +6,7 @@ object FrmMain: TFrmMain
   Caption = 'Chameleon Capturer V2'
   ClientHeight = 622
   ClientWidth = 889
+  Color = clBlack
   LCLVersion = '1.6.0.4'
   object PnlToolsTop: TPanel
     Left = 0
@@ -34,9 +35,34 @@ object FrmMain: TFrmMain
     Top = 536
     Width = 889
     Align = alBottom
+    ClientHeight = 86
+    ClientWidth = 889
     Color = clSilver
     ParentColor = False
     TabOrder = 1
+    object RGExt: TRadioGroup
+      Left = 0
+      Height = 87
+      Top = -1
+      Width = 82
+      AutoFill = True
+      Caption = 'Format:'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 68
+      ClientWidth = 78
+      ItemIndex = 1
+      Items.Strings = (
+        'JPG'
+        'BMP'
+      )
+      TabOrder = 0
+    end
   end
   object ImgScreenshot: TImage
     Left = 0

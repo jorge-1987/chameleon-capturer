@@ -17,6 +17,7 @@ type
     ImgScreenshot: TImage;
     PnlToolsBottom: TPanel;
     PnlToolsTop: TPanel;
+    RGExt: TRadioGroup;
     procedure BtnCaptureClick(Sender: TObject);
   private
     { private declarations }
@@ -42,13 +43,18 @@ begin
   //Basic Screenshot
   BmpScreenshot := TBitmap.Create;
   BmpScreenshot := UFunctions.TakeScreenshot(1);
-  BmpScreenshot.SaveToFile('tmp.bpm');
+  BmpScreenshot.SaveToFile('/tmp/tmp.bmp');
 
+  ImgScreenshot.AutoSize := False;
   ImgScreenshot.Height := BmpScreenshot.Canvas.Height;
   ImgScreenshot.Width := BmpScreenshot.Canvas.Width;
   //ImgScreenshot.Canvas.Height := BmpScreenshot.Canvas.Height;
   //ImgScreenshot.Canvas.Width := BmpScreenshot.Canvas.Width;
-  ImgScreenshot.Canvas.Draw(0,0,BmpScreenshot);
+  //ImgScreenshot.Canvas.Draw(0,0,BmpScreenshot);
+  ImgScreenshot.Picture.LoadFromFile('/tmp/tmp.bmp');
+  ImgScreenshot.AutoSize := True;
+  ImgScreenshot.Stretch := True;
+
 
 
 end;

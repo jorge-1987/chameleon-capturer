@@ -6,6 +6,7 @@ object FrmMain: TFrmMain
   Caption = 'Chameleon Capturer V2'
   ClientHeight = 622
   ClientWidth = 889
+  Color = clBlack
   LCLVersion = '1.6.0.4'
   object PnlToolsTop: TPanel
     Left = 0
